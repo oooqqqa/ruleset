@@ -21,3 +21,6 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-KEYWORD,discord
+DOMAIN-SUFFIX,steamstatic.com
+DOMAIN-SUFFIX,steampowered.com
+DOMAIN-KEYWORD,steamcommunity
