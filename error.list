@@ -1,0 +1,16 @@
+# Meituan Bug
+# This hostname currently returns NXDOMAIN. Keep it here as a workaround for
+# apps that still try to query a stale/broken NTP domain.
+DOMAIN,ntp.nasa.gov
+
+# SmartThings
+# This hostname currently returns NXDOMAIN. Keep it here as a workaround for
+# SmartThings/Samsung components that still reference this stale cloud endpoint.
+DOMAIN,av.samsungiotcloud.cn
+
+# Infuse / Surge Enhanced Mode Fake IP
+# Surge Enhanced Mode uses 198.18.0.0/15 as its fake-ip/VIF range. Infuse may
+# enumerate this virtual interface during source discovery and send bare-IP
+# NetBIOS/SMB discovery packets to 198.18.0.x. Treat traffic to this range as
+# misdirected local discovery, not real LAN access.
+IP-CIDR,198.18.0.0/15,no-resolve
