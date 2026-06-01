@@ -8,6 +8,10 @@ DOMAIN,ntp.nasa.gov
 # SmartThings/Samsung components that still reference this stale cloud endpoint.
 DOMAIN,av.samsungiotcloud.cn
 
+# JD
+# DNS query timeout
+DOMAIN-SUFFIX,jddebug.com
+
 # Infuse / Surge Enhanced Mode Fake IP
 # Surge Enhanced Mode uses 198.18.0.0/15 as its fake-ip/VIF range. Infuse may
 # enumerate this virtual interface during source discovery and send bare-IP
